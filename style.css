@@ -266,13 +266,15 @@ button {
     flex-direction: row;
     flex-wrap: wrap-reverse;
     justify-content: space-between;
-    row-gap: 30px; 
+    row-gap: 30px;
+    margin-left: 65px;
+    margin-right: 65px; 
 }
 #hebergements {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 950px;
+    width: 930px;
     height: 650px;
     border-radius: 20px;
     background: #f2f2f2;
@@ -334,8 +336,8 @@ button {
     width: 260px;
     height: 210px;
     box-shadow: 3px 5px 5px #e2e2e2;
-    margin-right: 5px;
-    margin-left: 5px;
+    margin-right: 2px;
+    margin-left: 2px;
 }
 
 
@@ -433,10 +435,10 @@ button {
     padding-right: 35px;
     padding-bottom: 30px;
     font-size: 12px;
+    height: 650px;
 }
 .selection_populaires {
     margin-top: -30px;
-    margin-right: 20px;
     display: flex;
     flex-direction: column;
     row-gap: 33px;
@@ -449,7 +451,7 @@ button {
     justify-content: space-between;
 }
 /**Icone graph**/
-.titres_populaires .icone {
+.titres_populaires .icones_populaires {
     margin-right: -30px;
     font-size: 23px;
     align-items: center;
@@ -466,10 +468,13 @@ button {
     font-weight: bold;
 }
 .carte_populaires {
+    height: 145px;
     background-color: white;
     border-radius: 20px;
     border: 5px solid white;
     box-shadow: 3px 5px 5px #e2e2e2;
+    margin-top: -5px;
+    margin-bottom: -5px;
 }
 .carte_populaires a {
     text-decoration: none;
@@ -508,6 +513,7 @@ button {
     padding-top: 45px;
     font-size: 11px;
     padding-left: 11px;
+    margin-top: -10px;
 }
 /***imagePopulaire***/
 .hotel_le_soleil_du_matin {
