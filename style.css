@@ -8,11 +8,13 @@
 /******************body********************/
 body {
     font-family: "Raleway-Medium";
-    font-size: medium;
-    margin-left: 180px;
-    margin-right: 180px;
+    font-size: medium;    
 }
-
+/****marges****/
+#bloc_page {
+    margin-left: 190px;
+    margin-right: 190px;
+}
 /*****************NAVBAR******************/
 .flexCentre {
     display: flex;
@@ -21,7 +23,7 @@ body {
 }
 .navBar {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     
 }
@@ -127,10 +129,10 @@ button {
     text-decoration: none;
     font-weight: bold;
     color: black;
-    font-size: 1.1em;
+    font-size: 1.2em;
     width: 50px;
     height: 100px;
-    margin-right: 20px;
+    margin-right: 25px;
     display: flex;
     align-items: center;
 }
@@ -139,7 +141,7 @@ button {
     border: 2px solid #f2f2f2;
     height: 50px;
     border-radius: 30px;
-    margin-right: 20px;
+    margin-right: 25px;
     margin-left: 25px;
     display: flex;
     justify-content: center;
@@ -149,7 +151,7 @@ button {
     border: 2px solid #f2f2f2;
     height: 50px;
     border-radius: 30px;
-    margin-right: 20px;
+    margin-right: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -158,7 +160,7 @@ button {
     border: 2px solid #f2f2f2;
     height: 50px;
     border-radius: 30px;
-    margin-right: 20px;
+    margin-right: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -167,7 +169,7 @@ button {
     border: 2px solid #f2f2f2;
     height: 50px;
     border-radius: 30px;
-    margin-right: 20px;
+    margin-right: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -175,7 +177,7 @@ button {
 /****text Iconnes****/
 .textIcones{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 /****text Iconnes Bordures****/
@@ -267,14 +269,13 @@ button {
     flex-wrap: wrap-reverse;
     justify-content: space-between;
     row-gap: 30px;
-    margin-left: 65px;
-    margin-right: 65px; 
+    margin-right: 130px;
 }
 #hebergements {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    width: 930px;
+    justify-content: space-around;
+    width: 925px;
     height: 650px;
     border-radius: 20px;
     background: #f2f2f2;
@@ -308,7 +309,7 @@ button {
     
 }
 .legendes div {
-    font-size: 14px;
+    font-size: 12px;
     padding-top: 8px;
     margin-top: -20px;
 }
@@ -436,6 +437,8 @@ button {
     padding-bottom: 30px;
     font-size: 12px;
     height: 650px;
+    border: 10px;
+    margin-left: -50px;
 }
 .selection_populaires {
     margin-top: -30px;
@@ -473,8 +476,8 @@ button {
     border-radius: 20px;
     border: 5px solid white;
     box-shadow: 3px 5px 5px #e2e2e2;
-    margin-top: -5px;
-    margin-bottom: -5px;
+    margin-top: -2px;
+    margin-bottom: -2px;
 }
 .carte_populaires a {
     text-decoration: none;
@@ -538,7 +541,182 @@ button {
     height: 135px;
 }
 /*******Activités à Marseille*******/
-#activites {
+#activite {
     width: 100%;
+    height: 420px;
+    padding-top: 30px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.selection-activites {
     height: 400px;
+    display: flex;   
+align-items: center;
+justify-content: space-between;
+}
+/***********************************************/
+.bloc_activites_1 {
+    width: 310px;
+    height: 400px;
+    margin-left: 0;
+    margin-right: 23px;
+
+}
+.bloc_activites_2 {
+    width: 310px;
+    height: 400px;
+    margin-left: 23px;
+    margin-right: 23px;
+
+}
+.bloc_activites_3 {
+    width: 310px;
+    height: 400px;
+    margin-right: 23px;
+    margin-left: 23px;
+
+}
+.bloc_activites_4 {
+    width: 310px;
+    height: 400px;
+    margin-left: 23px;
+    margin-right: 23px;
+}
+.titres_activites h2 {
+    padding-left: 5px;
+    padding-right: 40px;
+    height: 25px;
+    font-size: 22px;
+    display: flex;
+    align-self: flex-start;
+    justify-content: space-between;
+}
+/***cartes Activités***/   /***différences selon les tailles***/
+
+.cartes_activites {
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 3px 5px 5px #e2e2e2;
+    width: 310px;
+    height: 400px;
+}
+.cartes_activites_1 {
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 3px 5px 5px #e2e2e2;
+    width: 310px;
+    height: 210px;
+    margin-bottom: 40px;
+}
+.cartes_activites_2 {
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 3px 5px 5px #e2e2e2;
+    width: 310px;
+    height: 150px;
+    margin-top: 40px;
+}
+.cartes_activites_3 {
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 3px 5px 5px #e2e2e2;
+    width: 310px;
+    height: 180px;
+    margin-bottom: 40px;
+}
+
+
+/****text no-deco****/
+.cartes_activites a {
+    text-decoration: none;
+    color: black;
+}
+.cartes_activites_1 a {
+
+    text-decoration: none;
+    color: black;
+}
+.cartes_activites_2 a {
+    text-decoration: none;
+    color: black;
+}
+.cartes_activites_3 a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+#activite p {
+    padding-left: 20px;
+}
+/*******images Activités**********/
+.vieux_port {
+    background-image: url(images/activites/3_medium/vieux_port.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px 20px 0 0;
+    width: 310px;
+    height: 350px;
+}
+.fort_de_pomegues {
+    background-image: url(images/activites/4_small/fort_de_pomegues.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px 20px 0 0;
+    width: 310px;
+    height: 160px;
+}
+.iles-du_frioul {
+    background-image: url(images/activites/4_small/iles_du_frioul.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px 20px 0 0;
+    width: 310px;
+    height: 100px;
+}
+.parc_national_des_calanques {
+    background-image: url(images/activites/3_medium/parc_national_des_calanques.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px 20px 0 0;
+    width: 310px;
+    height: 350px;
+}
+.notre_dame_de_la_garde {
+    background-image: url(images/activites/4_small/notre_dame_de_la_garde.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px 20px 0 0;
+    width: 310px;
+    height: 130px;
+}
+.parc_longchamp {
+    background-image: url(images/activites/4_small/parc_longchamp.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px 20px 0 0;
+    width: 310px;
+    height: 130px;
+}
+/*****FOOTER*****/
+footer {
+    width: 1650px;
+    height: 160px;
+    padding-top: 20px;
+    margin-top: 100px;
+    margin-left: 100px;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: space-between;
+}
+footer a {
+    text-decoration: none;
+    color: black;
+}
+.a_propos {
+    
 }
