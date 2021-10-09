@@ -234,6 +234,9 @@ form {
     .block_filtres {
         display: flex;
         flex-wrap: wrap;
+        height: 350px;
+        width: auto;
+
     }
 }
 .filtres {
@@ -246,6 +249,19 @@ form {
     margin-left: 5px;
     display: flex;
     align-items: center;
+}@media all and (max-width:700px) {
+    .filtres {
+        width: 100%;
+    }
+}
+
+@media all and (max-width:700px) {
+    .text_icones {
+        align-items: flex-start;
+        flex-wrap: wrap;
+        padding-bottom: 30px;
+        width: 500px;
+    }
 }
 /*iconnes*/
 .iconne_eco {
@@ -264,9 +280,10 @@ form {
         height: 50px;
         border-radius: 30px;
         align-items: center;
-        margin-right: 10px;
-        margin-left: 0px;
         margin-bottom: 10px;
+        margin-left: 0;
+        margin-right: 10px;
+       
     }
 }
 .iconne_famille {
@@ -284,7 +301,7 @@ form {
         height: 50px;
         border-radius: 30px;
         align-items: center;  
-        margin-right: 50px;
+        margin-right: 0px;
         margin-left: 0px;
         margin-bottom: 10px;
     }
@@ -332,7 +349,7 @@ form {
 /*text_iconnes*/
 .text_icones{
     display: flex;
-    align-items: center;
+    
 }
 /*text iconnes bordures*/
 .icones {
@@ -424,6 +441,7 @@ form {
     .block_info {
         display: flex;
         margin-bottom: 20px;
+        margin-top: 20px;
     }
 }
 @media all and (max-width: 700px) {    
