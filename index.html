@@ -18,15 +18,16 @@
             <a href="index.html" id="logo"><img src="images/logo/Reservia.svg" alt="logo"></a>
             </div>
             <div class="navbar">
-            <div class="navbar_link active_link" id="navbar_link_hebergements">    
+            <div class="navbar_link_hebergements">
+                <div class="underline_effect"></div>    
+                    <a href="#hebergements">Hébergements</a>    
+            </div>
+            <div class="navbar_link_activites">
                 <div class="underline_effect"></div>
-                    <a href="#hebergements">Hébergements</a>
+                    <a href="#activite">Activités</a>    
             </div>
-            <div class="navbar_link" id="navbar_link_activites">
-                <div class="underline_effetc"></div>
-                    <a href="#activite">Activités</a>
-            </div>
-            <div class="navbar_link login" id="navbar_link_inscription">
+            <div class="navbar_link_inscription">
+                <div class="underline_effect"></div>
                 <a href="#">S'inscrire</a>
             </div>
             </div>    
@@ -41,7 +42,8 @@
     <div class="search">
     <div class="map"><i class="fas fa-map-marker-alt"></i></div>
     <input class="recherche" type="search" value="Marseille, France" />
-    <button>Rechercher</button>
+    <button class="search_button">Rechercher</button>
+    <button class="icon_glass"><i class="fas fa-search"></i></button>
     </div>
     </form>
     <nav>
@@ -49,30 +51,30 @@
     <div class="block_filtres">
         <a class="filtres" href="#">Filtres</a>
         <!--Add icones-->
-        <div class="textIcones">
-        <div class="iconneEco">    
+        <div class="text_icones">
+        <div class="iconne_eco">    
         <div class="icones"><i class="fas fa-money-bill-wave"></i></div>
         <div class="eco" a href="#">Economique</a></div>
         </div>
         <!--Add icones-->
-        <div class="iconneFamille">
+        <div class="iconne_famille">
         <div class="icones"><i class="fas fa-child"></i></div>
         <div class="famille" a href="#">Familial</a></div>
         </div>
         <!--Add icones-->
-        <div class="iconneRomantique">
+        <div class="iconne_romantique">
         <div class="icones"><i class="fas fa-heart"></i></div>
         <div class="romantique" a href="#">Romantique</a></div>
         </div>
         <!--Add icones-->
-        <div class="iconneAnimaux">
+        <div class="iconne_animaux">
         <div class="icones"><i class="fas fa-dog"></i></div>
         <div class="animaux" a href="#">Animaux autorisés</a></div>
         </div>
         </div>
     </div>
     <!--div Info-->
-    <div class="blockInfo">
+    <div class="block_info">
     <div class="info"><i class="fas fa-info-circle"></i></div>
         <p>Plus de 500 logements sont disponibles dans cette ville</p>
     </div> 
