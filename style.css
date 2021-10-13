@@ -7,6 +7,7 @@
 }
 body {
     font-family: "Raleway-Medium";
+    src: url(../reservia/fonts/Raleway-Medium.ttf);
     font-size: medium;    
 }
 /****marges****/
