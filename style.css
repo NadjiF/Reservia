@@ -460,12 +460,20 @@ form {
     row-gap: 30px;
     margin-right: 50px;
 }
-
+@media all and (max-width: 1024px) {
+    .a_la_une {
+        flex-direction: column-reverse;
+        margin-left: -50px;
+        margin-right: -55px;
+    }
+}
 @media all and (max-width: 700px) {
     .a_la_une {
         margin-left: 10px;
-        margin-right: 10px; 
-        height: auto; 
+        margin-right: 10px;
+        padding-left: 0;
+        height: 100%; 
+        width: 100%;
     }
 }
 #hebergements {
@@ -481,17 +489,20 @@ form {
     width: 900px;
     height: 650px;
 }
+@media all and (max-width: 1024px) {
+    #hebergements {
+        width: 100%;
+        padding-left: 10px;
+        margin-left: 10px;
+    }
+}
 @media all and (max-width: 700px) {
     #hebergements {
         background-color: #fff;
-        padding-right: 20px;
-        padding-left: 0;
-        padding-bottom: 0;
         margin-left: 0;
-        margin-right: 10;
-        margin-top: 200px;
-        margin-bottom: 250px;
+        margin-right: 20px;
         width: 100%;
+        height: 100%;
     }
 }
 /***titres H2***/
@@ -501,10 +512,15 @@ form {
     display: flex;
     padding-top: 5px;
 }
+@media all and (max-width: 1024px) {
+    .titres {
+        padding-left: 20px;
+    }
+}
 @media all and (max-width: 700px) {
     .titres {
         margin-bottom: 20px;
-        padding-left: 0;
+        padding-left: 10px;
         margin-left: -10px;
     }
 }
@@ -516,6 +532,13 @@ form {
     row-gap: 30px;
     padding-left: 5px;
     padding-right: 5px;
+}
+@media all and (max-width: 1024px) {
+    .selection {
+        justify-content: space-around;
+        column-gap: 33px;
+        row-gap: 33px;
+    }
 }
 @media all and (max-width: 700px) {
     .selection {
@@ -586,6 +609,11 @@ form {
     font-size: 18px;
     padding-left: 5px;
     margin-top: 40px;
+}
+@media all and (max-width: 1024px) {
+    .more {
+        padding-left: 20px;
+    }
 }
 @media all and (max-width: 700px) {
     .more {
@@ -670,15 +698,22 @@ form {
     height: 650px;
     border: 10px;
 }
+@media all and (max-width: 1024px) {
+    #populaires {
+        padding-left: 45px;
+    }
+}
 @media all and (max-width: 700px) {
     #populaires {
         background-color: #f2f2f2;
         border-radius: 0;
-        padding-right: 5;
-        padding-left: 5;
-        margin-left: 0;
-        margin-right: -15px;
-        margin-bottom: 200px;
+        padding-right: 20px;
+        padding-left: 10px;
+        padding-bottom: 30px;
+        margin-left: 5px;
+        margin-right: 10px;
+        width: auto;
+        height: auto;
     }
 }
 .selection_populaires {
@@ -698,6 +733,13 @@ form {
     padding-right: 40px;
     display: flex;
     justify-content: space-between;
+}
+@media all and (max-width: 700px) {
+    .titres_populaires {
+        padding-top: 10px;
+        width: 100%;
+        height: 90px;
+    }
 }
 /**Icone graph**/
 .titres_populaires .icones_populaires {
@@ -810,22 +852,25 @@ form {
 @media all and (max-width: 700px) {
     #activite {
         display: flex;
-        margin-top: 200px;
-        margin-bottom: 1250px;
+        flex-wrap: wrap;
+        flex-direction: column;
         width: 100%;
         height: auto;
+        padding-left: 10px;
+        margin-bottom: 0;
     }
 }
 .selection-activites {
     height: 400px;
     display: flex;
-
     align-items: center;
     justify-content: space-between;
 }
 @media all and (max-width: 700px) {
     .selection-activites {
         flex-flow: column;
+        height: auto;
+        width: 100%;
     }
 }
 /***********************************************/
@@ -835,11 +880,26 @@ form {
     margin-left: 0;
     margin-right: 23px;
 }
+@media all and (max-width: 700px) {
+    .bloc_activites_1 {
+        width: 100%;
+        height: auto;
+        margin: auto;
+        padding-bottom: 20px;
+    }
+}
 .bloc_activites_2 {
     width: 300px;
     height: 400px;
     margin-left: 23px;
     margin-right: 23px;
+}
+@media all and (max-width: 700px) {
+    .bloc_activites_2 {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
 }
 .bloc_activites_3 {
     width: 300px;
@@ -847,11 +907,25 @@ form {
     margin-right: 23px;
     margin-left: 23px;
 }
+@media all and (max-width: 700px) {
+    .bloc_activites_3 {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+}
 .bloc_activites_4 {
     width: 300px;
     height: 400px;
     margin-left: 23px;
     margin-right: 23px;
+}
+@media all and (max-width: 700px) {
+    .bloc_activites_4 {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
 }
 .titres_activites h2 {
     padding-left: 5px;
@@ -862,6 +936,13 @@ form {
     align-self: flex-start;
     justify-content: space-between;
 }
+@media all and (max-width: 700px) {
+    .titres_activites h2 {
+        width: 100%;
+        height: 100%;
+
+    }
+}
 /***cartes Activités***/   /***différences selon les tailles***/
 
 .cartes_activites {
@@ -871,6 +952,16 @@ form {
     width: 300px;
     height: 400px;
 }
+@media all and (max-width: 700px) {
+    .cartes_activites {
+        background-color: #fff;
+        border-radius: 20px;
+        box-shadow: 3px 5px 5px #e2e2e2;
+        width: 90%;
+        height: 190px;
+
+    }
+}
 .cartes_activites_1 {
     background-color: #fff;
     border-radius: 20px;
@@ -878,6 +969,16 @@ form {
     width: 300px;
     height: 210px;
     margin-bottom: 40px;
+}
+@media all and (max-width: 700px) {
+    .cartes_activites_1 {
+        background-color: #fff;
+        border-radius: 20px;
+        box-shadow: 3px 5px 5px #e2e2e2;
+        width: 90%;
+        height: 190px;
+        margin-bottom: 20px;
+    }
 }
 .cartes_activites_2 {
     background-color: #fff;
@@ -887,6 +988,16 @@ form {
     height: 150px;
     margin-top: 40px;
 }
+@media all and (max-width: 700px) {
+    .cartes_activites_2 {
+        background-color: #fff;
+        border-radius: 20px;
+        box-shadow: 3px 5px 5px #e2e2e2;
+        width: 90%;
+        height: 190px;
+        margin-top: 20px;
+    }
+}
 .cartes_activites_3 {
     background-color: #fff;
     border-radius: 20px;
@@ -894,6 +1005,16 @@ form {
     width: 300px;
     height: 180px;
     margin-bottom: 40px;
+}
+@media all and (max-width: 700px) {
+    .cartes_activites_3 {
+        background-color: #fff;
+        border-radius: 20px;
+        box-shadow: 3px 5px 5px #e2e2e2;
+        width: 90%;
+        height: 190px;
+        margin-bottom: 20px;
+    }
 }
 /****text no-deco****/
 .cartes_activites a {
@@ -963,6 +1084,17 @@ form {
     border-radius: 20px 20px 0 0;
     width: 300px;
     height: 130px;
+}
+@media all and (max-width: 700px) {
+    .vieux_port,
+    .fort_de_pomegues,
+    .iles-du_frioul,
+    .parc_national_des_calanques,
+    .notre_dame_de_la_garde,
+    .parc_longchamp {
+        width: 100%;
+        height: 135px;
+    }
 }
 /*****FOOTER*****/
 footer {
