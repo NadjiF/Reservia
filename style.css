@@ -1,13 +1,12 @@
 @font-face {
     font-family: "Raleway-Medium";
-    src: url(../reservia/fonts/Raleway-Medium.ttf);
+    src: url('fonts/Raleway-Medium.ttf');
 }
 * {
     box-sizing: border-box;
 }
 body {
     font-family: "Raleway-Medium";
-    src: url(../reservia/fonts/Raleway-Medium.ttf);
     font-size: medium;    
 }
 /****marges****/
@@ -22,7 +21,7 @@ body {
 }
 /*NAVBAR*/
 
-.menu {
+#menu {
     display: flex;
     justify-content: space-between;
     align-content: center;
@@ -31,20 +30,20 @@ body {
     width: 100%;
 }
 @media all and (max-width: 700px) {
-    .menu {
+    #menu {
         display: flex;
         align-items: center;
         height: 170px;
     }
 }
-.navbar {
+#navbar {
     display: flex;
     align-items: center ;
     margin-bottom: 30px;
     margin-right: 50px;
 }
 @media all and (max-width: 700px) {
-    .navbar {
+    #navbar {
         display: flex;
         height: 100%;
         width: 100%;
@@ -89,7 +88,7 @@ body {
 
     }
 }
-.navbar_link_hebergements > .underline_effect {
+.navbar_link_hebergements {
     border-top: #0065fc 2px solid;
     width: 100%;
 }
@@ -104,10 +103,10 @@ body {
         border-top:none;
     }
 }
-.navbar_link_activites:hover > .underline_effect {
+.navbar_link_activites:hover {
     border-top: #0065fc 2px solid;
 }
-.navbar_link_inscription:hover > .underline_effect {
+.navbar_link_inscription:hover {
     border-top: #0065fc 2px solid;
 }
 @media all and (max-width: 700px) {
