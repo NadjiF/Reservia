@@ -7,22 +7,22 @@
 }
 body {
     font-family: "Raleway-Medium";
-    src: url(../reservia/fonts/Raleway-Medium.ttf);
+    src: url('fonts/Raleway-Medium.ttf');
     font-size: medium;    
 }
 /****marges****/
 #bloc_page {
-    margin-left: 200px;
-    margin-right: 200px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 @media all and (max-width: 700px) {
     #bloc_page {
-        margin: auto;
+        margin-left: 5px;
+        margin-right: 5px;
     }
 }
 /*NAVBAR*/
-
-.menu {
+#menu {
     display: flex;
     justify-content: space-between;
     align-content: center;
@@ -30,110 +30,101 @@ body {
     height: 150px;
     width: 100%;
 }
+#logo img {
+    width: 140px;
+}
+#navbar {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.navbar_link_hebergements {
+    border-top: #0065fc 2px solid;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-right: 20px;
+}
+#navbar a {
+    color: black;
+    font-weight: 550;
+    text-decoration: none;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+#navbar a:visited {
+    color: #267bfc;
+}
+#inscription {
+    width: 50%;
+}
+#inscription a {
+    color: #0065fc;
+    font-weight: bold;
+    text-decoration: none;
+    justify-content: right;
+    padding-left: 30px;
+    width: 100%;
+}
+/**Responsive navbar**/
 @media all and (max-width: 700px) {
-    .menu {
-        display: flex;
-        align-items: center;
-        height: 170px;
+    #menu {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 55px;
+        margin-left: 10px;
+        margin-right: 10px;
     }
 }
-.navbar {
-    display: flex;
-    align-items: center ;
-    margin-bottom: 30px;
-    margin-right: 50px;
+@media all and (max-width: 700px) {
+    #logo img {
+        width: auto;
+    }
 }
 @media all and (max-width: 700px) {
-    .navbar {
+    #navbar {
+        grid-column: 1 / span2;
+        column-gap: 0;
+        border-bottom: #f2f2f2 solid 3px;
+        margin-right: -15px;
+        margin-left: -15px;
+        padding-top: 0;
+    }
+}
+@media all and (max-width: 700px) {
+    #navbar .navbar_link_hebergements,
+    #navbar .navbar_link_activites {
         display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5px;
+        margin-left: 0;
+        margin-bottom: 0;
         height: 100%;
         width: 100%;
-        align-items: center;
-        flex-wrap: wrap;
-        margin-top: 30px;
-        margin-right: 0;
-        margin-bottom: 0;
-        margin-top: 20px;
     }
 }
 @media all and (max-width: 700px) {
-    .navbar_link_inscription:nth-child(3) {
-        order: 1;
-        padding-left:200px;
+    #inscription {
+        grid-row: 1;
+        grid-column-start: 2;
+        justify-self: end;
+        margin-right: 30px;
     }
 }
 @media all and (max-width: 700px) {
-    .navbar_link_hebergements:nth-child(1) {
-        order: 2;
-        width: auto;
-        flex-direction: row;
-   }
-}
-@media all and (max-width: 700px) {
-    .navbar_link_activites:nth-child(2) {
-        order: 3;
-        width: auto;
-        flex-direction: row;
-        
+    .navbar_link_hebergements {
+        border-top: none;
+        border-bottom: #0065fc solid 3px;
+        padding-top: 0;
+        padding-bottom: 0;  
     }
 }
-.underline_effect {
-    width: 100%;
-    border-top:white 2px solid;
-    padding-bottom: 50px;
-}
-@media all and (max-width: 700px) {
-    .underline_effect {
-        border-top: transparent;
-        border-bottom:white 2px solid;
-
-    }
-}
-.navbar_link_hebergements > .underline_effect {
-    border-top: #0065fc 2px solid;
-    width: 100%;
-}
-@media all and (max-width: 700px) {
-    .navbar_link_hebergements > .underline_effect{
-        border-top: none;  
-    }
-}
-
-@media all and (max-width: 700px) {
-    .navbar_link_activites:hover > .underline_effect{
-        border-top:none;
-    }
-}
-.navbar_link_activites:hover > .underline_effect {
-    border-top: #0065fc 2px solid;
-}
-.navbar_link_inscription:hover > .underline_effect {
-    border-top: #0065fc 2px solid;
-}
-@media all and (max-width: 700px) {
-    .navbar_link_inscription:hover > .underline_effect{
-        border-top:none;
-    }
-}
-.navbar a {
-    color: black;
-    text-decoration: none;
-    padding: 25px;
-    padding-top: 30px;
-}
-.navbar a:visited {
-    color: #0065fc;
-
-}
-/**********************************/
+/*********FORM********/
 h1 {
     font-weight: bold;
     font-size: 1.5em;
-}
-@media all and (max-width: 700px) {
-    h1 {
-        padding-top: 20px;
-    }
 }
 form {
     width: 400px;
@@ -145,12 +136,6 @@ form {
     width: 400px;
     height: 50px;
     border-radius: 10px;
-}
-@media all and (max-width: 700px) {
-    .search {
-        display: flex;
-        flex-wrap: nowrap;
-    }
 }
 .map {
     background-color: #f2f2f2;
@@ -204,6 +189,19 @@ form {
 .icon_glass {
     display: none;
 }
+/**responsiv Form**/
+@media all and (max-width: 700px) {
+    h1 {
+        padding-top: 20px;
+    }
+}
+@media all and (max-width: 700px) {
+    .search {
+        display: flex;
+        flex-wrap: nowrap;
+        margin-top: 30px;
+    }
+}
 @media all and (max-width: 700px) {
     .search_button {
         display: none;
@@ -231,15 +229,7 @@ form {
     margin-top: 15px;
     margin-bottom: 10px;
 }
-@media all and (max-width:700px) {
-    .block_filtres {
-        display: flex;
-        flex-wrap: wrap;
-        height: 350px;
-        width: auto;
 
-    }
-}
 .filtres {
     text-decoration: none;
     font-weight: bold;
@@ -250,20 +240,8 @@ form {
     margin-left: 5px;
     display: flex;
     align-items: center;
-}@media all and (max-width:700px) {
-    .filtres {
-        width: 100%;
-    }
 }
 
-@media all and (max-width:700px) {
-    .text_icones {
-        align-items: flex-start;
-        flex-wrap: wrap;
-        padding-bottom: 30px;
-        width: 500px;
-    }
-}
 /*iconnes*/
 .iconne_eco {
     border: 2px solid #f2f2f2;
@@ -275,18 +253,7 @@ form {
     justify-content: center;
     align-items: center;
 }
-@media all and (max-width: 700px) {
-    .iconne_eco {
-        border: 2px solid #f2f2f2;
-        height: 50px;
-        border-radius: 30px;
-        align-items: center;
-        margin-bottom: 10px;
-        margin-left: 0;
-        margin-right: 10px;
-       
-    }
-}
+
 .iconne_famille {
     border: 2px solid #f2f2f2;
     height: 50px;
@@ -296,17 +263,7 @@ form {
     justify-content: center;
     align-items: center;
 }
-@media all and (max-width: 700px) {
-    .iconne_famille {
-        border: 2px solid #f2f2f2;
-        height: 50px;
-        border-radius: 30px;
-        align-items: center;  
-        margin-right: 0px;
-        margin-left: 0px;
-        margin-bottom: 10px;
-    }
-}
+
 .iconne_romantique {
     border: 2px solid #f2f2f2;
     height: 50px;
@@ -316,17 +273,7 @@ form {
     justify-content: center;
     align-items: center;
 }
-@media all and (max-width: 700px) {
-    .iconne_romantique {
-        border: 2px solid #f2f2f2;
-        height: 50px;
-        border-radius: 30px;
-        align-items: center;
-        margin-right: 50px;
-        margin-left: 0px;
-        margin-bottom: 10px;
-    }
-}
+
 .iconne_animaux {
     border: 2px solid #f2f2f2;
     height: 50px;
@@ -336,17 +283,7 @@ form {
     display: flex;
     align-items: center;
 }
-@media all and (max-width: 700px) {
-    .iconne_animaux {
-        border: 2px solid #f2f2f2;
-        height: 50px;
-        border-radius: 30px;
-        align-items: center;
-        margin-right: 10px;
-        margin-left: 0px;
-        margin-bottom: 10px;
-    }
-}
+
 /*text_iconnes*/
 .text_icones{
     display: flex;
@@ -438,6 +375,79 @@ form {
     margin-top: 0;
     margin-bottom: 0;
 }
+/**BlockFiltres responsiv**/
+@media all and (max-width:700px) {
+    .block_filtres {
+        display: flex;
+        flex-wrap: wrap;
+        height: 100%;
+        width: auto;
+    }
+}
+@media all and (max-width:700px) {
+    .filtres {
+        width: 100%;
+        height: 60px;
+    }
+}
+
+@media all and (max-width:700px) {
+    .text_icones {
+        display: flex;
+        justify-content: left;
+        flex-flow: row;
+        flex-wrap: wrap;
+        width: auto;
+        gap: 10px;
+        font-size: 14px;
+    }
+}
+@media all and (max-width: 700px) {
+    .iconne_eco {
+        border: 2px solid #f2f2f2;
+        height: 50px;
+        border-radius: 30px;
+        align-items: center;
+        margin-bottom: 10px;
+        margin-left: 0;
+        margin-right: 0;
+       
+    }
+}
+@media all and (max-width: 700px) {
+    .iconne_famille {
+        border: 2px solid #f2f2f2;
+        height: 50px;
+        border-radius: 30px;
+        align-items: center; 
+        align-self: flex-start; 
+        margin-right: 0px;
+        margin-left: 0px;
+        margin-bottom: 10px;
+    }
+}
+@media all and (max-width: 700px) {
+    .iconne_romantique {
+        border: 2px solid #f2f2f2;
+        height: 50px;
+        border-radius: 30px;
+        align-items: center;
+        margin-right: 50px;
+        margin-left: 0px;
+        margin-bottom: 10px;
+    }
+}
+@media all and (max-width: 700px) {
+    .iconne_animaux {
+        border: 2px solid #f2f2f2;
+        height: 50px;
+        border-radius: 30px;
+        align-items: center;
+        margin-right: 10px;
+        margin-left: 0px;
+        margin-bottom: 10px;
+    }
+}
 @media all and (max-width: 700px) {
     .block_info {
         display: flex;
@@ -457,9 +467,7 @@ form {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap-reverse;
-    justify-content: space-between;
     row-gap: 30px;
-    margin-right: 50px;
 }
 @media all and (max-width: 1024px) {
     .a_la_une {
@@ -472,7 +480,7 @@ form {
     .a_la_une {
         margin-left: 10px;
         margin-right: 10px;
-        padding-left: 0;
+        row-gap: 0;
         height: 100%; 
         width: 100%;
     }
@@ -486,6 +494,7 @@ form {
     padding-left: 30px;
     padding-right: 30px;
     padding-bottom: 10px;
+    margin-right: 20px;
     background-size: cover;
     width: 900px;
     height: 650px;
@@ -500,8 +509,8 @@ form {
 @media all and (max-width: 700px) {
     #hebergements {
         background-color: #fff;
-        margin-left: 0;
-        margin-right: 20px;
+        padding-left: 5px;
+        margin-right: 0;
         width: 100%;
         height: 100%;
     }
@@ -520,7 +529,6 @@ form {
 }
 @media all and (max-width: 700px) {
     .titres {
-        margin-bottom: 20px;
         padding-left: 10px;
         margin-left: -10px;
     }
@@ -695,6 +703,7 @@ form {
     padding-left: 35px;
     padding-right: 35px;
     padding-bottom: 30px;
+    margin-left: 20px;
     font-size: 12px;
     height: 650px;
     border: 10px;
@@ -713,7 +722,7 @@ form {
         padding-bottom: 30px;
         margin-left: 5px;
         margin-right: 10px;
-        width: auto;
+        width: 100%;
         height: auto;
     }
 }
@@ -843,29 +852,29 @@ form {
 /*******Activités à Marseille*******/
 #activite {
     width: 100%;
-    height: 420px;
+    height: 100%;
     padding-top: 30px;
-    margin-bottom: 20px;
-    display: flex;
+    margin-bottom: 50px;
     flex-wrap: wrap;
 
 }
 @media all and (max-width: 700px) {
     #activite {
-        display: flex;
         flex-wrap: wrap;
         flex-direction: column;
         width: 100%;
         height: auto;
-        padding-left: 10px;
+        padding-left: 7px;
         margin-bottom: 0;
     }
 }
 .selection-activites {
     height: 400px;
+    width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content:start;
+
 }
 @media all and (max-width: 700px) {
     .selection-activites {
@@ -876,10 +885,10 @@ form {
 }
 /***********************************************/
 .bloc_activites_1 {
-    width: 300px;
+    width: 310px;
     height: 400px;
     margin-left: 0;
-    margin-right: 23px;
+    margin-right: 20px;
 }
 @media all and (max-width: 700px) {
     .bloc_activites_1 {
@@ -890,10 +899,10 @@ form {
     }
 }
 .bloc_activites_2 {
-    width: 300px;
+    width: 310px;
     height: 400px;
-    margin-left: 23px;
-    margin-right: 23px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 @media all and (max-width: 700px) {
     .bloc_activites_2 {
@@ -903,10 +912,10 @@ form {
     }
 }
 .bloc_activites_3 {
-    width: 300px;
+    width: 310px;
     height: 400px;
-    margin-right: 23px;
-    margin-left: 23px;
+    margin-right: 20px;
+    margin-left: 20px;
 }
 @media all and (max-width: 700px) {
     .bloc_activites_3 {
@@ -916,10 +925,10 @@ form {
     }
 }
 .bloc_activites_4 {
-    width: 300px;
+    width: 310px;
     height: 400px;
-    margin-left: 23px;
-    margin-right: 23px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 @media all and (max-width: 700px) {
     .bloc_activites_4 {
@@ -931,6 +940,7 @@ form {
 .titres_activites h2 {
     padding-left: 5px;
     padding-right: 40px;
+    width: 300px;
     height: 25px;
     font-size: 22px;
     display: flex;
@@ -950,7 +960,7 @@ form {
     background-color: #fff;
     border-radius: 20px;
     box-shadow: 3px 5px 5px #e2e2e2;
-    width: 300px;
+    width: 310px;
     height: 400px;
 }
 @media all and (max-width: 700px) {
@@ -958,7 +968,7 @@ form {
         background-color: #fff;
         border-radius: 20px;
         box-shadow: 3px 5px 5px #e2e2e2;
-        width: 90%;
+        width: 337px;
         height: 190px;
 
     }
@@ -967,7 +977,7 @@ form {
     background-color: #fff;
     border-radius: 20px;
     box-shadow: 3px 5px 5px #e2e2e2;
-    width: 300px;
+    width: 310px;
     height: 210px;
     margin-bottom: 40px;
 }
@@ -976,7 +986,7 @@ form {
         background-color: #fff;
         border-radius: 20px;
         box-shadow: 3px 5px 5px #e2e2e2;
-        width: 90%;
+        width: 337px;
         height: 190px;
         margin-bottom: 20px;
     }
@@ -985,7 +995,7 @@ form {
     background-color: #fff;
     border-radius: 20px;
     box-shadow: 3px 5px 5px #e2e2e2;
-    width: 300px;
+    width: 310px;
     height: 150px;
     margin-top: 40px;
 }
@@ -994,7 +1004,7 @@ form {
         background-color: #fff;
         border-radius: 20px;
         box-shadow: 3px 5px 5px #e2e2e2;
-        width: 90%;
+        width: 337px;
         height: 190px;
         margin-top: 20px;
     }
@@ -1003,7 +1013,7 @@ form {
     background-color: #fff;
     border-radius: 20px;
     box-shadow: 3px 5px 5px #e2e2e2;
-    width: 300px;
+    width: 310px;
     height: 180px;
     margin-bottom: 40px;
 }
@@ -1012,7 +1022,7 @@ form {
         background-color: #fff;
         border-radius: 20px;
         box-shadow: 3px 5px 5px #e2e2e2;
-        width: 90%;
+        width: 337px;
         height: 190px;
         margin-bottom: 20px;
     }
@@ -1043,7 +1053,7 @@ form {
     background-size: cover;
     background-position: center;
     border-radius: 20px 20px 0 0;
-    width: 300px;
+    width: 310px;
     height: 350px;
 }
 .fort_de_pomegues {
@@ -1051,7 +1061,7 @@ form {
     background-size: cover;
     background-position: center;
     border-radius: 20px 20px 0 0;
-    width: 300px;
+    width: 310px;
     height: 160px;
 }
 .iles-du_frioul {
@@ -1059,7 +1069,7 @@ form {
     background-size: cover;
     background-position: center;
     border-radius: 20px 20px 0 0;
-    width: 300px;
+    width: 310px;
     height: 100px;
 }
 .parc_national_des_calanques {
@@ -1067,7 +1077,7 @@ form {
     background-size: cover;
     background-position: center;
     border-radius: 20px 20px 0 0;
-    width: 300px;
+    width: 310px;
     height: 350px;
 }
 .notre_dame_de_la_garde {
@@ -1075,7 +1085,7 @@ form {
     background-size: cover;
     background-position: center;
     border-radius: 20px 20px 0 0;
-    width: 300px;
+    width: 310px;
     height: 130px;
 }
 .parc_longchamp {
@@ -1083,7 +1093,7 @@ form {
     background-size: cover;
     background-position: center;
     border-radius: 20px 20px 0 0;
-    width: 300px;
+    width: 310px;
     height: 130px;
 }
 @media all and (max-width: 700px) {
@@ -1102,9 +1112,8 @@ footer {
     width: 1450px;
     height: 200px;
     padding-top: 20px;
-    margin-top: 130px;
+    margin-top: 20px;
     margin-bottom: 30px;
-    margin-left: 200px;
     background-color: #f2f2f2;
 }
 @media all and (max-width: 700px) {
