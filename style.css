@@ -15,6 +15,12 @@ body {
     margin-left: 50px;
     margin-right: 50px;
 }
+@media all and (max-width: 1024px) {
+    #bloc_page {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
 @media all and (max-width: 700px) {
     #bloc_page {
         margin-left: 5px;
@@ -376,6 +382,13 @@ form {
     margin-bottom: 0;
 }
 /**BlockFiltres responsiv**/
+@media all and (max-width: 1024px) {
+    .block_filtres {
+        display: flex;
+        flex-wrap: wrap;
+        height: auto;
+    }
+}
 @media all and (max-width:700px) {
     .block_filtres {
         display: flex;
@@ -390,7 +403,12 @@ form {
         height: 60px;
     }
 }
-
+@media all and (max-width: 1024px) {
+    .text_icones {
+        flex-wrap: wrap;
+        row-gap: 10px;
+    }
+}
 @media all and (max-width:700px) {
     .text_icones {
         display: flex;
@@ -402,7 +420,12 @@ form {
         font-size: 14px;
     }
 }
-@media all and (max-width: 700px) {
+@media all and (max-width: 1024px){
+    .iconne_eco {
+        margin-left: 0;
+    }
+}
+@media all and (max-width: 700px) { 
     .iconne_eco {
         border: 2px solid #f2f2f2;
         height: 50px;
@@ -471,9 +494,13 @@ form {
 }
 @media all and (max-width: 1024px) {
     .a_la_une {
+        display: flex;
         flex-direction: column-reverse;
         margin-left: -50px;
         margin-right: -55px;
+        padding-left: 30px;
+        width: 100%;
+        height: auto;
     }
 }
 @media all and (max-width: 700px) {
@@ -483,6 +510,7 @@ form {
         row-gap: 0;
         height: 100%; 
         width: 100%;
+        padding-left: 0;
     }
 }
 #hebergements {
@@ -501,9 +529,11 @@ form {
 }
 @media all and (max-width: 1024px) {
     #hebergements {
-        width: 100%;
+        width: auto;
+        height: auto;
         padding-left: 10px;
         margin-left: 10px;
+        margin-right: 0;
     }
 }
 @media all and (max-width: 700px) {
@@ -711,6 +741,9 @@ form {
 @media all and (max-width: 1024px) {
     #populaires {
         padding-left: 45px;
+        width: auto;
+        height: auto;
+        margin-left: 10px;
     }
 }
 @media all and (max-width: 700px) {
@@ -852,91 +885,176 @@ form {
 /*******Activités à Marseille*******/
 #activite {
     width: 100%;
-    height: 100%;
+    height: 550px;
     padding-top: 30px;
     margin-bottom: 50px;
-    flex-wrap: wrap;
-
+}
+@media all and (max-width: 1024px) {
+    #activite {
+        margin-left: -10px;
+        width: auto;
+        height: auto;
+    }
 }
 @media all and (max-width: 700px) {
     #activite {
         flex-wrap: wrap;
         flex-direction: column;
-        width: 100%;
+        width: auto;
         height: auto;
+        margin-left: 10px;
         padding-left: 7px;
         margin-bottom: 0;
     }
 }
 .selection-activites {
-    height: 400px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content:start;
+    width: auto;
+    height: auto;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 310px);
+    grid-template-rows: 400px 200px 400px 200px;
+    column-gap: 40px;
+}
 
+@media all and (max-width: 1024px) {
+    .selection-activites {
+        width: auto;
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr; 
+        row-gap: 20px; 
+    }
 }
 @media all and (max-width: 700px) {
     .selection-activites {
-        flex-flow: column;
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
         height: auto;
-        width: 100%;
+        width: auto;       
     }
 }
 /***********************************************/
 .bloc_activites_1 {
     width: 310px;
-    height: 400px;
-    margin-left: 0;
-    margin-right: 20px;
+    height: auto;
+    grid-column: 1;
 }
-@media all and (max-width: 700px) {
-    .bloc_activites_1 {
-        width: 100%;
-        height: auto;
-        margin: auto;
-        padding-bottom: 20px;
-    }
-}
+
 .bloc_activites_2 {
     width: 310px;
-    height: 400px;
-    margin-left: 20px;
-    margin-right: 20px;
+    height: auto;
+    grid-column: 2;
+    grid-row: 1;
+
+}
+.bloc_activites_3 {
+    width: 310px;
+    height: auto;
+    grid-column: 2;
+    grid-row: 1;
+    align-self: flex-end;
+    
+}
+.bloc_activites_4 {
+    width: 310px;
+    height: auto;
+    grid-column: 3;
+    
+   
+}
+.bloc_activites_5 {
+    width: 310px;
+    height: auto;
+    grid-column: 4;
+    grid-row: 1;
+   
+}
+.bloc_activites_6 {
+    width: 310px;
+    height: auto;
+    grid-column: 4;
+    grid-row: 1;
+    align-self: flex-end;
+    
+}
+
+/********Responsiv bloc_activites********/
+@media all and (max-width: 1024px) {
+    .bloc_activites{
+        grid-column-start: 1;
+        grid-row: 1;
+    }
+}
+@media all and (max-width: 1024px) {
+    .bloc_activites_2{
+        grid-column-start: 2;
+        grid-row: 1;
+    }
+}
+@media all and (max-width: 1024px) {
+    .bloc_activites_3{
+        grid-column-start: 1;
+        grid-row: 2;
+    }
+}
+@media all and (max-width: 1024px) {
+    .bloc_activites_4{
+        grid-column-start: 2;
+        grid-row: 2;
+    }
+}
+@media all and (max-width: 1024px) {
+    .bloc_activites_5{
+        grid-column-start: 1;
+        grid-row: 3;
+    }
+}
+@media all and (max-width: 1024px) {
+    .bloc_activites_6{
+        grid-column-start: 2;
+        grid-row: 3;
+    }
+}
+@media all and (max-width: 700px) {
+    .bloc_activites {
+        width: 100%;
+        height: auto;
+    }
 }
 @media all and (max-width: 700px) {
     .bloc_activites_2 {
         width: 100%;
         height: auto;
-        margin-bottom: 20px;
-    }
+    }   
 }
-.bloc_activites_3 {
-    width: 310px;
-    height: 400px;
-    margin-right: 20px;
-    margin-left: 20px;
-}
-@media all and (max-width: 700px) {
+@media all and (max-width: 700px) {    
     .bloc_activites_3 {
         width: 100%;
         height: auto;
-        margin-bottom: 20px;
     }
 }
-.bloc_activites_4 {
-    width: 310px;
-    height: 400px;
-    margin-left: 20px;
-    margin-right: 20px;
-}
-@media all and (max-width: 700px) {
+@media all and (max-width: 700px) {    
     .bloc_activites_4 {
         width: 100%;
         height: auto;
-        margin-bottom: 20px;
     }
 }
+@media all and (max-width: 700px) {    
+    .bloc_activites_5 {
+        width: 100%;
+        height: auto;
+    }
+}
+@media all and (max-width: 700px) {    
+    .bloc_activites_6 {
+        width: 100%;
+        height: auto;
+    }
+}
+/**********/
 .titres_activites h2 {
     padding-left: 5px;
     padding-right: 40px;
@@ -951,36 +1069,115 @@ form {
     .titres_activites h2 {
         width: 100%;
         height: 100%;
-
     }
 }
 /***cartes Activités***/   /***différences selon les tailles***/
 
-.cartes_activites {
-    background-color: #fff;
-    border-radius: 20px;
-    box-shadow: 3px 5px 5px #e2e2e2;
-    width: 310px;
-    height: 400px;
-}
-@media all and (max-width: 700px) {
-    .cartes_activites {
-        background-color: #fff;
-        border-radius: 20px;
-        box-shadow: 3px 5px 5px #e2e2e2;
-        width: 337px;
-        height: 190px;
-
-    }
-}
 .cartes_activites_1 {
     background-color: #fff;
     border-radius: 20px;
     box-shadow: 3px 5px 5px #e2e2e2;
     width: 310px;
-    height: 210px;
-    margin-bottom: 40px;
+    height: 400px;   
 }
+
+
+.cartes_activites_2 {
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 3px 5px 5px #e2e2e2;
+    width: 310px;
+    height: 210px;  
+}
+
+.cartes_activites_3 {
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 3px 5px 5px #e2e2e2;
+    width: 310px;
+    height: 150px;
+}
+
+.cartes_activites_4 {
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 3px 5px 5px #e2e2e2;
+    width: 310px;
+    height: 400px; 
+}
+
+.cartes_activites_5 {
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 3px 5px 5px #e2e2e2;
+    width: 310px;
+    height: 180px;   
+}
+
+.cartes_activites_6 {
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 3px 5px 5px #e2e2e2;
+    width: 310px;
+    height: 180px;  
+}
+
+/**********responsive carte_activites**********/
+@media all and (max-width: 1024px) {
+    .cartes_activites_1{
+        background-color: #fff;
+        border-radius: 20px;
+        box-shadow: 3px 5px 5px #e2e2e2;
+        width: 260px;
+        height: 210px;
+    }
+}
+@media all and (max-width: 1024px) {
+    .cartes_activites_2{
+        background-color: #fff;
+        border-radius: 20px;
+        box-shadow: 3px 5px 5px #e2e2e2;
+        width: 260px;
+        height: 210px;        
+    }
+}
+@media all and (max-width: 1024px) {
+    .cartes_activites_3{
+        background-color: #fff;
+        border-radius: 20px;
+        box-shadow: 3px 5px 5px #e2e2e2;
+        width: 260px;
+        height: 210px;
+    }
+}
+@media all and (max-width: 1024px) {
+    .cartes_activites_4{
+        background-color: #fff;
+        border-radius: 20px;
+        box-shadow: 3px 5px 5px #e2e2e2;
+        width: 260px;
+        height: 210px;
+    }
+}
+@media all and (max-width: 1024px) {
+    .cartes_activites_5{
+        background-color: #fff;
+        border-radius: 20px;
+        box-shadow: 3px 5px 5px #e2e2e2;
+        width: 260px;
+        height: 210px;
+    }
+}
+@media all and (max-width: 1024px) {
+    .cartes_activites_6{
+        background-color: #fff;
+        border-radius: 20px;
+        box-shadow: 3px 5px 5px #e2e2e2;
+        width: 260px;
+        height: 210px;
+    }
+}
+/***mobile***/
 @media all and (max-width: 700px) {
     .cartes_activites_1 {
         background-color: #fff;
@@ -988,16 +1185,8 @@ form {
         box-shadow: 3px 5px 5px #e2e2e2;
         width: 337px;
         height: 190px;
-        margin-bottom: 20px;
+
     }
-}
-.cartes_activites_2 {
-    background-color: #fff;
-    border-radius: 20px;
-    box-shadow: 3px 5px 5px #e2e2e2;
-    width: 310px;
-    height: 150px;
-    margin-top: 40px;
 }
 @media all and (max-width: 700px) {
     .cartes_activites_2 {
@@ -1006,16 +1195,7 @@ form {
         box-shadow: 3px 5px 5px #e2e2e2;
         width: 337px;
         height: 190px;
-        margin-top: 20px;
     }
-}
-.cartes_activites_3 {
-    background-color: #fff;
-    border-radius: 20px;
-    box-shadow: 3px 5px 5px #e2e2e2;
-    width: 310px;
-    height: 180px;
-    margin-bottom: 40px;
 }
 @media all and (max-width: 700px) {
     .cartes_activites_3 {
@@ -1024,23 +1204,38 @@ form {
         box-shadow: 3px 5px 5px #e2e2e2;
         width: 337px;
         height: 190px;
-        margin-bottom: 20px;
+    }
+}
+@media all and (max-width: 700px) {
+    .cartes_activites_4 {
+        background-color: #fff;
+        border-radius: 20px;
+        box-shadow: 3px 5px 5px #e2e2e2;
+        width: 337px;
+        height: 190px;
+        
+    }
+}
+@media all and (max-width: 700px) {
+    .cartes_activites_5 {
+        background-color: #fff;
+        border-radius: 20px;
+        box-shadow: 3px 5px 5px #e2e2e2;
+        width: 337px;
+        height: 190px;
+    }
+}
+@media all and (max-width: 700px) {
+    .cartes_activites_6 {
+        background-color: #fff;
+        border-radius: 20px;
+        box-shadow: 3px 5px 5px #e2e2e2;
+        width: 337px;
+        height: 190px;
     }
 }
 /****text no-deco****/
-.cartes_activites a {
-    text-decoration: none;
-    color: black;
-}
-.cartes_activites_1 a {
-    text-decoration: none;
-    color: black;
-}
-.cartes_activites_2 a {
-    text-decoration: none;
-    color: black;
-}
-.cartes_activites_3 a {
+#activite a {
     text-decoration: none;
     color: black;
 }
@@ -1096,6 +1291,17 @@ form {
     width: 310px;
     height: 130px;
 }
+@media all and (max-width: 1024px) {
+    .vieux_port,
+    .fort_de_pomegues,
+    .iles-du_frioul,
+    .parc_national_des_calanques,
+    .notre_dame_de_la_garde,
+    .parc_longchamp {
+        width: 100%;
+        height: 160px;
+    }
+}
 @media all and (max-width: 700px) {
     .vieux_port,
     .fort_de_pomegues,
@@ -1116,12 +1322,25 @@ footer {
     margin-bottom: 30px;
     background-color: #f2f2f2;
 }
+@media all and (max-width: 1024px) {
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-left: 0;
+        background-color: #f2f2f2;
+        width: 100%;
+        height: auto;
+        padding-bottom: 20px;
+    }
+}
 @media all and (max-width: 700px) {
     footer {
         display: flex;
         margin-left: 0;
         background-color: #f2f2f2;
-        height: 600px;
+        height: auto;
         width: 100%;
     }
 }
@@ -1151,6 +1370,12 @@ footer a {
     padding-right: 230px;
     padding-left: 150px;
 }
+@media all and (max-width: 1024px) {
+    .nos_hebergements {
+        padding-left: 20px;
+        padding-right: 50px;
+    }
+}
 @media all and (max-width: 700px) {
     .nos_hebergements {
         padding-left: 20px;
@@ -1159,6 +1384,12 @@ footer a {
 }
 .assistance {
     padding-right: 350px;
+}
+@media all and (max-width: 1024px) {
+    .assistance {
+        padding-right: 20px;
+        padding-left: 50px;
+    }
 }
 @media all and (max-width: 700px) {
     .assistance {
