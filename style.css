@@ -524,8 +524,8 @@ form {
     padding-bottom: 10px;
     margin-right: 20px;
     background-size: cover;
-    width: 900px;
-    height: 650px;
+    width: 60%;
+    
 }
 @media all and (max-width: 1024px) {
     #hebergements {
@@ -550,6 +550,7 @@ form {
     padding-left: 5px;
     padding-right: 5px;
     display: flex;
+    width: 40%;
     padding-top: 5px;
 }
 @media all and (max-width: 1024px) {
@@ -571,6 +572,7 @@ form {
     row-gap: 30px;
     padding-left: 5px;
     padding-right: 5px;
+    width: 100%;
 }
 @media all and (max-width: 1024px) {
     .selection {
@@ -613,8 +615,8 @@ form {
     display: flex;
     border: white solid 5px;
     background-color: white;
-    border-radius: 20px;  
-    width: 255px;
+    border-radius: 20px;
+    width: 300px;  
     height: 210px;
     box-shadow: 3px 5px 5px #e2e2e2;
 }
@@ -641,6 +643,8 @@ form {
     justify-items: center;
     line-height: 58px;
     font-weight: bold;
+    margin-bottom: 0;
+    padding-top: 10px;
 }
 /***afficher plus***/
 .more {
@@ -666,24 +670,24 @@ form {
 /***images Hebergements***/
 .auberge_la_cannebiere {
     background-image: url(images/hebergements/4_small/auberge_la_cannebiere.jpg);
-    width: 245px;
-    height: 115px;
+    width: 290px;
+    height: 120px;
     background-size: cover;
     background-position: center;
     border-radius: 20px 20px 0 0;
 }
 .hotel_du_port {
     background-image: url(images/hebergements/4_small/hotel_du_port.jpg);
-    width: 245px;
-    height: 115px;
+    width: 290px;
+    height: 120px;
     background-size: cover;
     background-position: center;
     border-radius: 20px 20px 0 0;
 }
 .hotel_les_mouettes {
     background-image: url(images/hebergements/4_small/hotel_les_mouettes.jpg);
-    width: 245px;
-    height: 115px;
+    width: 290px;
+    height: 120px;
     background-size: cover;
     background-position: center;
     border-radius: 20px 20px 0 0;
@@ -691,24 +695,24 @@ form {
 /*ligne2*/
 .hotel_de_la_mer {
     background-image: url(images/hebergements/4_small/hotel_de_la_mer.jpg);
-    width: 245px;
-    height: 115px;
+    width: 290px;
+    height: 120px;
     background-size: cover;
     background-position: center;
     border-radius: 20px 20px 0 0;
 }
 .auberge_le_panier {
     background-image: url(images/hebergements/4_small/auberge_le_panier.jpg);
-    width: 245px;
-    height: 115px;
+    width: 290px;
+    height: 120px;
     background-size: cover;
     background-position: center;
     border-radius: 20px 20px 0 0;
 }
 .hotel_chez_amina {
     background-image: url(images/hebergements/4_small/hotel_chez_amina.jpg);
-    width: 245px;
-    height: 115px;
+    width: 290px;
+    height: 120px;
     background-size: cover;
     background-position: center;
     border-radius: 20px 20px 0 0;    
@@ -727,7 +731,6 @@ form {
 #populaires {
     background-color: #f2f2f2;
     border-radius: 20px;
-    display: flex;
     flex-direction: column;
     row-gap: 33px;
     padding-left: 35px;
@@ -735,8 +738,7 @@ form {
     padding-bottom: 30px;
     margin-left: 20px;
     font-size: 12px;
-    height: 650px;
-    border: 10px;
+    
 }
 @media all and (max-width: 1024px) {
     #populaires {
@@ -760,7 +762,6 @@ form {
     }
 }
 .selection_populaires {
-    margin-top: -30px;
     display: flex;
     flex-direction: column;
     row-gap: 33px;
@@ -774,6 +775,7 @@ form {
 .titres_populaires {
     padding-left: 5px;
     padding-right: 40px;
+    margin-top: 10px;
     display: flex;
     justify-content: space-between;
 }
@@ -807,7 +809,7 @@ form {
     }
 }
 .carte_populaires {
-    height: 145px;
+    height: 150px;
     background-color: white;
     border-radius: 20px;
     border: 5px solid white;
@@ -883,21 +885,22 @@ form {
     height: 135px;
 }
 /*******Activités à Marseille*******/
-#activite {
-    width: 100%;
-    height: 550px;
-    padding-top: 30px;
-    margin-bottom: 50px;
+#section_activite {
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+    padding-top: 80px;
 }
 @media all and (max-width: 1024px) {
-    #activite {
+    #section_activite {
         margin-left: -10px;
         width: auto;
         height: auto;
     }
 }
 @media all and (max-width: 700px) {
-    #activite {
+    #section_activite {
         flex-wrap: wrap;
         flex-direction: column;
         width: auto;
@@ -1235,11 +1238,11 @@ form {
     }
 }
 /****text no-deco****/
-#activite a {
+#section_activite a {
     text-decoration: none;
     color: black;
 }
-#activite p {
+#section_activite p {
     padding-left: 20px;
 }
 /*******images Activités**********/
