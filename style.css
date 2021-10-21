@@ -63,7 +63,7 @@ body {
     color: #267bfc;
 }
 #inscription {
-    width: 50%;
+    width: 30%;
 }
 #inscription a {
     color: #0065fc;
@@ -491,6 +491,7 @@ form {
     flex-direction: row;
     flex-wrap: wrap-reverse;
     row-gap: 30px;
+    column-gap: 30px;
 }
 @media all and (max-width: 1024px) {
     .a_la_une {
@@ -516,13 +517,11 @@ form {
 #hebergements {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     border-radius: 20px;
     background: #f2f2f2;
     padding-left: 30px;
     padding-right: 30px;
     padding-bottom: 10px;
-    margin-right: 20px;
     background-size: cover;
     width: 60%;
     
@@ -550,7 +549,6 @@ form {
     padding-left: 5px;
     padding-right: 5px;
     display: flex;
-    width: 40%;
     padding-top: 5px;
 }
 @media all and (max-width: 1024px) {
@@ -572,7 +570,8 @@ form {
     row-gap: 30px;
     padding-left: 5px;
     padding-right: 5px;
-    width: 100%;
+    margin-top: 20px;
+    
 }
 @media all and (max-width: 1024px) {
     .selection {
@@ -603,7 +602,6 @@ form {
     font-size: 18px;
     padding-top: 10px;
     font-weight: bold;
-    margin-top: -15px;
 }
 .legendes .tarifs {
     font-size: 14px;
@@ -616,8 +614,8 @@ form {
     border: white solid 5px;
     background-color: white;
     border-radius: 20px;
-    width: 300px;  
-    height: 210px;
+    width: 310px;  
+    height: 195px;
     box-shadow: 3px 5px 5px #e2e2e2;
 }
 @media all and (max-width: 700px) {
@@ -667,27 +665,28 @@ form {
     text-decoration: none;
     color: black;
 }
+
 /***images Hebergements***/
 .auberge_la_cannebiere {
     background-image: url(images/hebergements/4_small/auberge_la_cannebiere.jpg);
-    width: 290px;
-    height: 120px;
+    width: 300px;
+    height: 115px;
     background-size: cover;
     background-position: center;
     border-radius: 20px 20px 0 0;
 }
 .hotel_du_port {
     background-image: url(images/hebergements/4_small/hotel_du_port.jpg);
-    width: 290px;
-    height: 120px;
+    width: 300px;
+    height: 115px;
     background-size: cover;
     background-position: center;
     border-radius: 20px 20px 0 0;
 }
 .hotel_les_mouettes {
     background-image: url(images/hebergements/4_small/hotel_les_mouettes.jpg);
-    width: 290px;
-    height: 120px;
+    width: 300px;
+    height: 115px;
     background-size: cover;
     background-position: center;
     border-radius: 20px 20px 0 0;
@@ -695,24 +694,24 @@ form {
 /*ligne2*/
 .hotel_de_la_mer {
     background-image: url(images/hebergements/4_small/hotel_de_la_mer.jpg);
-    width: 290px;
-    height: 120px;
+    width: 300px;
+    height: 115px;
     background-size: cover;
     background-position: center;
     border-radius: 20px 20px 0 0;
 }
 .auberge_le_panier {
     background-image: url(images/hebergements/4_small/auberge_le_panier.jpg);
-    width: 290px;
-    height: 120px;
+    width: 300px;
+    height: 115px;
     background-size: cover;
     background-position: center;
     border-radius: 20px 20px 0 0;
 }
 .hotel_chez_amina {
     background-image: url(images/hebergements/4_small/hotel_chez_amina.jpg);
-    width: 290px;
-    height: 120px;
+    width: 300px;
+    height: 115px;
     background-size: cover;
     background-position: center;
     border-radius: 20px 20px 0 0;    
@@ -729,16 +728,16 @@ form {
 }
 /*******Les plus Populaires*********/
 #populaires {
+    width: 35%;
     background-color: #f2f2f2;
     border-radius: 20px;
+    display: flex;
     flex-direction: column;
     row-gap: 33px;
     padding-left: 35px;
     padding-right: 35px;
     padding-bottom: 30px;
-    margin-left: 20px;
-    font-size: 12px;
-    
+    font-size: 12px;  
 }
 @media all and (max-width: 1024px) {
     #populaires {
@@ -762,6 +761,8 @@ form {
     }
 }
 .selection_populaires {
+    margin-top: -30px;
+    padding-bottom: 10px;
     display: flex;
     flex-direction: column;
     row-gap: 33px;
@@ -775,7 +776,6 @@ form {
 .titres_populaires {
     padding-left: 5px;
     padding-right: 40px;
-    margin-top: 10px;
     display: flex;
     justify-content: space-between;
 }
@@ -800,7 +800,7 @@ form {
     font-size: 22px;
     justify-content: center;
     justify-items: center;
-    line-height: 58px;
+    line-height: 80px;
     font-weight: bold;
 }
 @media all and (max-width: 700px) {
@@ -808,14 +808,11 @@ form {
         padding-right: 20px;
     }
 }
-.carte_populaires {
-    height: 150px;
+.carte_populaires {    
     background-color: white;
     border-radius: 20px;
     border: 5px solid white;
     box-shadow: 3px 5px 5px #e2e2e2;
-    margin-top: -2px;
-    margin-bottom: -2px;
 }
 @media all and (max-width: 700px) {
     .carte_populaires {
@@ -891,11 +888,13 @@ form {
     flex-direction: column;
     padding-bottom: 20px;
     padding-top: 80px;
+    height: 600px;
+    width: 100%;
 }
 @media all and (max-width: 1024px) {
     #section_activite {
         margin-left: -10px;
-        width: auto;
+        width: 100%;
         height: auto;
     }
 }
@@ -911,19 +910,17 @@ form {
     }
 }
 .selection-activites {
-    width: auto;
+    width: 95%;
     height: auto;
     margin-bottom: 50px;
     display: grid;
-    grid-template-columns: repeat(4, 310px);
-    grid-template-rows: 400px 200px 400px 200px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 2fr 1fr 2fr 1fr;
     column-gap: 40px;
 }
 
 @media all and (max-width: 1024px) {
     .selection-activites {
-        width: auto;
-        height: auto;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr; 
@@ -941,20 +938,20 @@ form {
 }
 /***********************************************/
 .bloc_activites_1 {
-    width: 310px;
+    width: 100%;
     height: auto;
     grid-column: 1;
 }
 
 .bloc_activites_2 {
-    width: 310px;
+    width: 100%;
     height: auto;
     grid-column: 2;
     grid-row: 1;
 
 }
 .bloc_activites_3 {
-    width: 310px;
+    width: 100%;
     height: auto;
     grid-column: 2;
     grid-row: 1;
@@ -962,21 +959,21 @@ form {
     
 }
 .bloc_activites_4 {
-    width: 310px;
+    width: 100%;
     height: auto;
     grid-column: 3;
     
    
 }
 .bloc_activites_5 {
-    width: 310px;
+    width: 100%;
     height: auto;
     grid-column: 4;
     grid-row: 1;
    
 }
 .bloc_activites_6 {
-    width: 310px;
+    width: 100%;
     height: auto;
     grid-column: 4;
     grid-row: 1;
@@ -986,39 +983,45 @@ form {
 
 /********Responsiv bloc_activites********/
 @media all and (max-width: 1024px) {
-    .bloc_activites{
+    .bloc_activites_1 {
         grid-column-start: 1;
         grid-row: 1;
+        width: 100%;
     }
 }
 @media all and (max-width: 1024px) {
     .bloc_activites_2{
         grid-column-start: 2;
         grid-row: 1;
+        width: 100%;
     }
 }
 @media all and (max-width: 1024px) {
     .bloc_activites_3{
         grid-column-start: 1;
         grid-row: 2;
+        width: 100%;
     }
 }
 @media all and (max-width: 1024px) {
     .bloc_activites_4{
         grid-column-start: 2;
         grid-row: 2;
+        width: 100%;
     }
 }
 @media all and (max-width: 1024px) {
     .bloc_activites_5{
         grid-column-start: 1;
         grid-row: 3;
+        width: 100%;
     }
 }
 @media all and (max-width: 1024px) {
     .bloc_activites_6{
         grid-column-start: 2;
         grid-row: 3;
+        width: 100%;
     }
 }
 @media all and (max-width: 700px) {
@@ -1080,7 +1083,7 @@ form {
     background-color: #fff;
     border-radius: 20px;
     box-shadow: 3px 5px 5px #e2e2e2;
-    width: 310px;
+    width: 100%;
     height: 400px;   
 }
 
@@ -1089,7 +1092,7 @@ form {
     background-color: #fff;
     border-radius: 20px;
     box-shadow: 3px 5px 5px #e2e2e2;
-    width: 310px;
+    width: 100%;
     height: 210px;  
 }
 
@@ -1097,7 +1100,7 @@ form {
     background-color: #fff;
     border-radius: 20px;
     box-shadow: 3px 5px 5px #e2e2e2;
-    width: 310px;
+    width: 100%;
     height: 150px;
 }
 
@@ -1105,7 +1108,7 @@ form {
     background-color: #fff;
     border-radius: 20px;
     box-shadow: 3px 5px 5px #e2e2e2;
-    width: 310px;
+    width: 100%;
     height: 400px; 
 }
 
@@ -1113,7 +1116,7 @@ form {
     background-color: #fff;
     border-radius: 20px;
     box-shadow: 3px 5px 5px #e2e2e2;
-    width: 310px;
+    width: 100%;
     height: 180px;   
 }
 
@@ -1121,7 +1124,7 @@ form {
     background-color: #fff;
     border-radius: 20px;
     box-shadow: 3px 5px 5px #e2e2e2;
-    width: 310px;
+    width: 100%;
     height: 180px;  
 }
 
@@ -1131,8 +1134,8 @@ form {
         background-color: #fff;
         border-radius: 20px;
         box-shadow: 3px 5px 5px #e2e2e2;
-        width: 260px;
-        height: 210px;
+        width: 100%;
+        height: 390px;
     }
 }
 @media all and (max-width: 1024px) {
@@ -1140,8 +1143,8 @@ form {
         background-color: #fff;
         border-radius: 20px;
         box-shadow: 3px 5px 5px #e2e2e2;
-        width: 260px;
-        height: 210px;        
+        width: 100%;
+        height: 390px;      
     }
 }
 @media all and (max-width: 1024px) {
@@ -1149,8 +1152,8 @@ form {
         background-color: #fff;
         border-radius: 20px;
         box-shadow: 3px 5px 5px #e2e2e2;
-        width: 260px;
-        height: 210px;
+        width: 100%;
+        height: 390px;
     }
 }
 @media all and (max-width: 1024px) {
@@ -1158,8 +1161,8 @@ form {
         background-color: #fff;
         border-radius: 20px;
         box-shadow: 3px 5px 5px #e2e2e2;
-        width: 260px;
-        height: 210px;
+        width: 100%;
+        height: 390px;
     }
 }
 @media all and (max-width: 1024px) {
@@ -1167,8 +1170,8 @@ form {
         background-color: #fff;
         border-radius: 20px;
         box-shadow: 3px 5px 5px #e2e2e2;
-        width: 260px;
-        height: 210px;
+        width: 100%;
+        height: 390px;
     }
 }
 @media all and (max-width: 1024px) {
@@ -1176,8 +1179,8 @@ form {
         background-color: #fff;
         border-radius: 20px;
         box-shadow: 3px 5px 5px #e2e2e2;
-        width: 260px;
-        height: 210px;
+        width: 100%;
+        height: 390px;
     }
 }
 /***mobile***/
@@ -1186,7 +1189,7 @@ form {
         background-color: #fff;
         border-radius: 20px;
         box-shadow: 3px 5px 5px #e2e2e2;
-        width: 337px;
+        width: 100%;
         height: 190px;
 
     }
@@ -1196,7 +1199,7 @@ form {
         background-color: #fff;
         border-radius: 20px;
         box-shadow: 3px 5px 5px #e2e2e2;
-        width: 337px;
+        width: 100%;
         height: 190px;
     }
 }
@@ -1205,7 +1208,7 @@ form {
         background-color: #fff;
         border-radius: 20px;
         box-shadow: 3px 5px 5px #e2e2e2;
-        width: 337px;
+        width: 100%;
         height: 190px;
     }
 }
@@ -1214,7 +1217,7 @@ form {
         background-color: #fff;
         border-radius: 20px;
         box-shadow: 3px 5px 5px #e2e2e2;
-        width: 337px;
+        width: 100%;
         height: 190px;
         
     }
@@ -1224,7 +1227,7 @@ form {
         background-color: #fff;
         border-radius: 20px;
         box-shadow: 3px 5px 5px #e2e2e2;
-        width: 337px;
+        width: 100%;
         height: 190px;
     }
 }
@@ -1233,7 +1236,7 @@ form {
         background-color: #fff;
         border-radius: 20px;
         box-shadow: 3px 5px 5px #e2e2e2;
-        width: 337px;
+        width: 100%;
         height: 190px;
     }
 }
@@ -1251,7 +1254,7 @@ form {
     background-size: cover;
     background-position: center;
     border-radius: 20px 20px 0 0;
-    width: 310px;
+    width: 100%;
     height: 350px;
 }
 .fort_de_pomegues {
@@ -1259,7 +1262,7 @@ form {
     background-size: cover;
     background-position: center;
     border-radius: 20px 20px 0 0;
-    width: 310px;
+    width: 100%;
     height: 160px;
 }
 .iles-du_frioul {
@@ -1267,7 +1270,7 @@ form {
     background-size: cover;
     background-position: center;
     border-radius: 20px 20px 0 0;
-    width: 310px;
+    width: 100%;
     height: 100px;
 }
 .parc_national_des_calanques {
@@ -1275,7 +1278,7 @@ form {
     background-size: cover;
     background-position: center;
     border-radius: 20px 20px 0 0;
-    width: 310px;
+    width: 100%;
     height: 350px;
 }
 .notre_dame_de_la_garde {
@@ -1283,7 +1286,7 @@ form {
     background-size: cover;
     background-position: center;
     border-radius: 20px 20px 0 0;
-    width: 310px;
+    width: 100%;
     height: 130px;
 }
 .parc_longchamp {
@@ -1291,7 +1294,7 @@ form {
     background-size: cover;
     background-position: center;
     border-radius: 20px 20px 0 0;
-    width: 310px;
+    width: 100%;
     height: 130px;
 }
 @media all and (max-width: 1024px) {
@@ -1302,7 +1305,7 @@ form {
     .notre_dame_de_la_garde,
     .parc_longchamp {
         width: 100%;
-        height: 160px;
+        height: 350px;
     }
 }
 @media all and (max-width: 700px) {
@@ -1318,7 +1321,7 @@ form {
 }
 /*****FOOTER*****/
 footer {
-    width: 1450px;
+    width: 95%;
     height: 200px;
     padding-top: 20px;
     margin-top: 20px;
