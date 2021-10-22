@@ -916,7 +916,7 @@ form {
     #section_activite {
         margin-left: -10px;
         width: 100%;
-        height: auto;
+        height: 100%;
     }
 }
 @media all and (max-width: 700px) {
@@ -933,7 +933,6 @@ form {
 .selection-activites {
     width: 97%;
     height: 550px;
-    margin-bottom: 50px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 2fr 1fr 2fr 1fr;
@@ -946,6 +945,7 @@ form {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr; 
         row-gap: 20px; 
+        height: 100%;
     }
 }
 @media all and (max-width: 700px) {
@@ -1357,7 +1357,7 @@ footer {
         margin-left: 0;
         background-color: #f2f2f2;
         width: 100%;
-        height: auto;
+        height: 100%;
         padding-bottom: 20px;
     }
 }
