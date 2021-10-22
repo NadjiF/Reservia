@@ -938,7 +938,6 @@ form {
     grid-template-rows: 2fr 1fr 2fr 1fr;
     column-gap: 40px;
 }
-
 @media all and (max-width: 1024px) {
     .selection-activites {
         display: grid;
