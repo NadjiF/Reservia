@@ -235,7 +235,6 @@ form {
     margin-top: 15px;
     margin-bottom: 10px;
 }
-
 .filtres {
     text-decoration: none;
     font-weight: bold;
@@ -247,7 +246,6 @@ form {
     display: flex;
     align-items: center;
 }
-
 /*iconnes*/
 .iconne_eco {
     border: 2px solid #f2f2f2;
@@ -279,7 +277,6 @@ form {
     justify-content: center;
     align-items: center;
 }
-
 .iconne_animaux {
     border: 2px solid #f2f2f2;
     height: 50px;
@@ -290,6 +287,11 @@ form {
     align-items: center;
 }
 
+@media all and (max-width: 700px) {
+    .iconne_animaux {
+        width: 215px;
+    }
+}
 
 /*text_iconnes*/
 .text_icones{
@@ -359,6 +361,20 @@ form {
     color: black;
     font-size: 1.1em;
     border-radius: 0 25px 0;
+}
+@media all and (max-width: 700px) {
+    
+    .eco,
+    .famille,
+    .romantique {
+        padding-left: 10px;
+    }
+}
+@media all and (max-width: 700px) {
+    .animaux {
+        padding-left: 10px;
+        padding-right: 0;
+    }
 }
 .text_icones a {
     text-decoration: none;
@@ -891,6 +907,7 @@ form {
 #section_activite {
     border-radius: 20px;
     display: flex;
+    justify-content: center;
     flex-direction: column;
     padding-bottom: 20px;
     padding-top: 80px;
@@ -916,8 +933,8 @@ form {
     }
 }
 .selection-activites {
-    width: 95%;
-    height: auto;
+    width: 97%;
+    height: 550px;
     margin-bottom: 50px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -1331,7 +1348,6 @@ footer {
     height: 200px;
     padding-top: 20px;
     margin-top: 20px;
-    margin-bottom: 30px;
     background-color: #f2f2f2;
 }
 @media all and (max-width: 1024px) {
