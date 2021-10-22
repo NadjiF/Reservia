@@ -720,8 +720,8 @@ form {
     background-position: center;
     border-radius: 20px 20px 0 0;
 }
-.auberge_le_panier {
-    background-image: url(images/hebergements/4_small/auberge_le_panier.jpg);
+.auberge_lepanier {
+    background-image: url(images/hebergements/4_small/auberge_lepanier.jpg);
     width: 300px;
     height: 115px;
     background-size: cover;
