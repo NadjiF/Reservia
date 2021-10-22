@@ -290,10 +290,13 @@ form {
     align-items: center;
 }
 
+
 /*text_iconnes*/
 .text_icones{
-    display: flex;
-    
+    display: flex;   
+}
+.text_icones a {
+    color: black;
 }
 /*text iconnes bordures*/
 .icones {
@@ -356,6 +359,9 @@ form {
     color: black;
     font-size: 1.1em;
     border-radius: 0 25px 0;
+}
+.text_icones a {
+    text-decoration: none;
 }
 /*Info*/
 .block_info{
