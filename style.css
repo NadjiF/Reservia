@@ -1372,7 +1372,13 @@ footer {
 }
 .bloc_end {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    width: 75%;
+}
+@media all and (max-width: 1024px) {
+    .bloc_end {
+        width: 90%;   
+    }
 }
 @media all and (max-width: 700px) {
     .bloc_end {
@@ -1392,29 +1398,10 @@ footer a {
         padding-left: 20px;
     }
 }
-.nos_hebergements {
-    padding-right: 230px;
-    padding-left: 150px;
-}
-@media all and (max-width: 1024px) {
-    .nos_hebergements {
-        padding-left: 20px;
-        padding-right: 50px;
-    }
-}
 @media all and (max-width: 700px) {
     .nos_hebergements {
         padding-left: 20px;
         padding-right: 0;
-    }
-}
-.assistance {
-    padding-right: 350px;
-}
-@media all and (max-width: 1024px) {
-    .assistance {
-        padding-right: 20px;
-        padding-left: 50px;
     }
 }
 @media all and (max-width: 700px) {
@@ -1425,6 +1412,7 @@ footer a {
 .text_end {
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 .bloc_end a {
     padding-bottom: 5px;
