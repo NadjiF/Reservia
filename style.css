@@ -301,6 +301,9 @@ form {
 .text_icones a {
     color: black;
 }
+.text_icones a:hover {
+    color: #0065fc;
+}
 /*text iconnes bordures*/
 .icones {
     display: flex;
